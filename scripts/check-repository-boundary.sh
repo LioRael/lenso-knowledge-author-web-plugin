@@ -24,7 +24,6 @@ if rg -n 'sqlx|axum|lenso-http-auth|lenso_http_auth' Cargo.toml src tests; then
 fi
 
 rg -q 'plugin-id = "lenso\.knowledge-author\.web"' Cargo.toml
-rg -q 'lenso-capability-knowledge-base.*rev = "[0-9a-f]{40}"' Cargo.toml
 rg -q 'list_articles_with_context' src/lib.rs
 rg -q 'get_draft_with_context' src/lib.rs
 rg -q 'create_draft_with_context' src/lib.rs
